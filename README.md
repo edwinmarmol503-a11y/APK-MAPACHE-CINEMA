@@ -1,32 +1,49 @@
 # Mapache Cinema para Android
 
-**Estudio Lumera · versión 7.0.0 · Python + Kivy**
+**Estudio Lumera · versión 8.0.0 · JavaScript + Capacitor**
 
 [**DESCARGAR MAPACHE CINEMA (.APK)**](https://github.com/edwinmarmol503-a11y/APK-MAPACHE-CINEMA/releases/latest/download/Mapache-Cinema.apk)
 
 Enlace corto de descarga: https://da.gd/mapache
 
-![Escanea para descargar Mapache Cinema](qr-mapache-cinema.png)
+[**JUGAR EN EL NAVEGADOR**](https://edwinmarmol503-a11y.github.io/Mapache-cinema/)
+
+| Descargar la app Android | Jugar en el navegador |
+| --- | --- |
+| ![QR de descarga](qr-descargar-android.png) | ![QR del juego web](qr-jugar-navegador.png) |
 
 ## Instalación
 
-1. Descarga la APK desde un dispositivo con **Android 7.0 o posterior y sistema de 64 bits** (ARM64 o x86_64).
-2. Abre el archivo y permite la instalación desde la aplicación de descarga si Android lo solicita.
+1. Descarga la APK en un dispositivo con **Android 7.0 o posterior**.
+2. Abre el archivo y permite instalar desde la aplicación de descarga si Android lo solicita.
 3. Pulsa **Instalar** y abre **Mapache Cinema**.
 
-Esta versión ejecuta el juego en Python con Kivy y SDL2. Se instala como una aplicación independiente de la edición anterior de Capacitor: ambas pueden coexistir. Los avances anteriores y los del navegador no se importan automáticamente.
+Esta edición vuelve al juego original en JavaScript, empaquetado con Capacitor.
+Actualiza la APK original 6.0.2 conservando su firma e identidad y sus datos locales.
+La edición Python/Kivy 7.0.0 es una aplicación independiente: puede coexistir y sus
+partidas no se trasladan automáticamente. No hace falta borrarla.
 
-## Qué incluye
+## Novedades
 
-- Cinco niveles, cuatro dificultades, finales A/B/C y **43 pistas incluidas**. Juego y audios disponibles sin conexión.
-- Controles táctiles, teclado y mando configurable; noche, noche clara y día.
-- Guardado propio de la app y clasificación conectada al servicio compartido con la versión web. Inicia la partida con internet para competir; las iniciadas sin conexión son locales.
-- Pausa del cronómetro y la música, recuerdos para curar, emotes y escenas finales.
+- Cruceta y stick táctiles, cuatro botones en rombo y hombros L/R.
+- × salta, □ ataca, ○ esquiva, △ usa; L bloquea, R lanza, SELECT cambia objeto y START pausa.
+- Apuntar hacia arriba ya no provoca un salto. Se conserva la opción para zurdos.
+- Enemigos aproximadamente un 12 % más rápidos en todas las zonas; un 17 % en Pesadilla.
+- El Farolero invoca enemigos desde la fase 1. Los enemigos fuera de la arena ya no bloquean sus refuerzos.
 
-## Código y verificación
+Conserva cinco niveles, cuatro dificultades, los finales A/B/C, 43 pistas, tres
+ambientaciones, recuerdos para curarse, emotes, guardado y mando configurable.
+Juego y música funcionan sin conexión. La clasificación utiliza el servicio
+compartido con la versión web; inicia la partida con internet para competir.
 
-En [la versión publicada](https://github.com/edwinmarmol503-a11y/APK-MAPACHE-CINEMA/releases/latest) se incluyen **Mapache-Cinema-Python-fuentes.zip** y **SHA256SUMS.txt**. El ZIP contiene código, recursos, pruebas e instrucciones para compilar con Python, Kivy, Buildozer y python-for-android.
+## Código fuente
 
-Pasaron 139 pruebas automáticas y un recorrido de instalación, entrada táctil, pausa, música y recuperación de partida en emulador Android 16. Falta probar en teléfono ARM64 y mando físicos. Los informes detallados están dentro del ZIP.
+La [publicación 8.0.0](https://github.com/edwinmarmol503-a11y/APK-MAPACHE-CINEMA/releases/tag/v8.0.0)
+incluye la APK firmada, **Mapache-Cinema-Android-8.0.0-fuente.zip**, huellas SHA-256
+y los QR. El ZIP contiene el proyecto Android, JavaScript, recursos e instrucciones
+de compilación; no contiene claves de firma ni datos personales del desarrollador.
 
-La [edición anterior 6.0.2](https://github.com/edwinmarmol503-a11y/APK-MAPACHE-CINEMA/releases/tag/v6.0.2) permanece disponible.
+El [código del juego web](https://github.com/edwinmarmol503-a11y/Mapache-cinema) está
+en su propio repositorio. La [versión Python/Kivy 7.0.0](https://github.com/edwinmarmol503-a11y/APK-MAPACHE-CINEMA/releases/tag/v7.0.0)
+y la [APK original 6.0.2](https://github.com/edwinmarmol503-a11y/APK-MAPACHE-CINEMA/releases/tag/v6.0.2)
+permanecen disponibles en el historial.
